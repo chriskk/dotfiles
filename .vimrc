@@ -4,6 +4,12 @@
 
 call pathogen#infect()
 syntax enable             " enable syntax highlighting
+
+" Solarized colorscheme
+" http://ethanschoonover.com/solarized
+set background=dark
+colorscheme solarized
+
 filetype plugin indent on " activates indenting for files
 set number                " show line numbers
 set numberwidth=5         " for files with a lot of lines
