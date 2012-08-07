@@ -1,1 +1,5 @@
 export EDITOR=vim
+
+# NERDTree mojibake issue with the arrow character
+export LC_ALL=en_US.utf-8
+export LANG="$LC_ALL"
