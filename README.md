@@ -30,14 +30,22 @@ Used as the text editor for Ruby on Rails development on remote machines.
     * Reference: [Synchronizing plugins with git submodules and pathogen](http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/)
   * [Solarized colorsheme](https://github.com/altercation/vim-colors-solarized)
 
+###Installing additional Vim plugins
+
 ```
 # Install vim plugins into dotfiles/vim/bundle
 $ git submodule add http://github.com/tpope/vim-fugitive.git bundle/vim-fugitive
 $ git add .
 $ git commit -m "Install vim-fugitive bundle as a submodule."
 ```
+###Upgrading Vim plugin bundles
 
 ```
 # Upgrading all bundled plugins
 $ git submodule foreach git pull origin master
+```
+```
+# Upgrading a specific plugin bundle
+$ cd ~/.vim/bundle/fugitive
+$ git pull origin master
 ```
