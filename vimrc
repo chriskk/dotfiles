@@ -29,3 +29,8 @@ set shiftround            " always indent/outdent to the nearest tabstop
 " Respect modeline in files
 set modeline
 set modelines=4
+
+" Automatically go into NERDTree if vim is stated with no file specified
+autocmd vimenter * if !argc() | NERDTree | endif
+" Automatically close vim if NERDTree is the only window left
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
