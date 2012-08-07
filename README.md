@@ -1,0 +1,43 @@
+# chriskk Dot Files
+Local dev environment:
+
+* Mac OS X 10.7.x Lion
+  * Should work in Linux as well
+* Bash (default shell)
+
+## Installation
+
+```
+# Clone into ~/
+$ git clone http://github.com/chriskk/dotfiles.git
+```
+```
+# Run the installation script, which will symlink the dot files.
+# Existing symlinked dot files are not touched.
+$ cd dotfiles
+$ rake install
+```
+```
+# Pull in latest vim plugins
+$ git submodule update --init
+```
+
+##Vim
+Used as the text editor for Ruby on Rails development on remote machines.
+
+  * Pathogen for plugins
+  * Installed as git submodules for easier maintenance
+    * Reference: [Synchronizing plugins with git submodules and pathogen](http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/)
+  * [Solarized colorsheme](https://github.com/altercation/vim-colors-solarized)
+
+```
+# Install vim plugins into dotfiles/vim/bundle
+$ git submodule add http://github.com/tpope/vim-fugitive.git bundle/vim-fugitive
+$ git add .
+$ git commit -m "Install vim-fugitive bundle as a submodule."
+```
+
+```
+# Upgrading all bundled plugins
+$ git submodule foreach git pull origin master
+```
