@@ -3,6 +3,7 @@
 " https://github.com/mathiasbynens/dotfiles
 
 call pathogen#infect()
+call pathogen#helptags()
 syntax enable             " enable syntax highlighting
 
 " Solarized colorscheme
