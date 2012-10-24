@@ -1,7 +1,8 @@
 # chriskk Dot Files
 Local dev environment:
 
-* Mac OS X 10.7.x Lion
+* Mac OS X 10.7 Lion
+* Mac OS X 10.8 Mountain Lion
   * Should work in Linux as well
 * Bash (default shell)
 
@@ -9,7 +10,7 @@ Local dev environment:
 
 ```
 # Clone into ~/
-$ git clone http://github.com/chriskk/dotfiles.git
+$ git clone https://github.com/chriskk/dotfiles.git
 ```
 ```
 # Run the installation script, which will symlink the dot files.
