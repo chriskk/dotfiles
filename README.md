@@ -1,8 +1,7 @@
 # chriskk Dot Files
 Local dev environment:
 
-* Mac OS X 10.7 Lion
-* Mac OS X 10.8 Mountain Lion
+* Mac OS X 10.7, 10.8, and 10.9
   * Should work in Linux as well
 * Bash (default shell)
 
@@ -14,12 +13,19 @@ Clone into `~/`
 $ git clone https://github.com/chriskk/dotfiles.git
 ```
 
-Local environment variables are set within localrc, which is ignored by git. Add local paths such as `/usr/local` and any aliases to localrc.
+Local environment variables are set within localrc, which is ignored by git. Add local paths such as `/usr/local/bin` and any aliases to localrc.
 
 ```
 $ cd dotfiles
 dotfiles $ vim localrc
 ```
+
+If you want to use homebrew on OS X, then set this path in localrc.
+
+```
+export PATH="/usr/local/bin:$PATH"
+```
+
 
 Run the installation script, which will symlink the dot files. Existing symlinked dot files are not touched.
 
