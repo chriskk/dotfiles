@@ -14,3 +14,6 @@
   path = vim/bundle/nerdtree
   url = http://github.com/scrooloose/nerdtree.git
   ignore = dirty
+[submodule "bundle/vim-fugitive"]
+	path = bundle/vim-fugitive
+	url = http://github.com/tpope/vim-fugitive.git
