@@ -1,7 +1,7 @@
 # chriskk Dot Files
 Local dev environment:
 
-* Mac OS X 10.7, 10.8, and 10.9
+* Mac OS X 10.7 and above
   * Should work in Linux as well
 * Bash (default shell)
 
