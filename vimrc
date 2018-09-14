@@ -2,9 +2,9 @@
 " http://blog.smalleycreative.com/tutorials/using-git-and-github-to-manage-your-dotfiles/
 " https://github.com/mathiasbynens/dotfiles
 
-call pathogen#infect()
-call pathogen#helptags()
-syntax enable             " enable syntax highlighting
+execute pathogen#infect()
+execute pathogen#helptags()
+syntax on                " enable syntax highlighting
 
 " Solarized colorscheme
 " http://ethanschoonover.com/solarized
@@ -35,3 +35,8 @@ set modelines=4
 autocmd vimenter * if !argc() | NERDTree | endif
 " Automatically close vim if NERDTree is the only window left
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
+" vim-airline settings
+let g:airline_theme='solarized'
+let g:airline_solarized_bg='dark'
+
