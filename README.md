@@ -69,7 +69,6 @@ https://iterm2colorschemes.com
 
 Load iTerm2 preferences from `dotfiles/iTerm2/com.googlecode.iterm2.plist`
 
-
 ## Vim
 Used as the main console text editor. Selected plugins are geared toward Ruby on Rails development.
 
@@ -87,7 +86,7 @@ dotfiles $ git submodule update --init
 
 ```
 # Install vim plugins into dotfiles/vim/bundle
-$ git submodule add http://github.com/tpope/vim-fugitive.git bundle/vim-fugitive
+$ git submodule add http://github.com/tpope/vim-fugitive.git ~/dotfiles/vim/bundle/vim-fugitive
 $ git add .
 $ git commit -m "Install vim-fugitive bundle as a submodule."
 ```
@@ -102,3 +101,11 @@ $ git submodule foreach git pull origin master
 $ cd ~/.vim/bundle/fugitive
 $ git pull origin master
 ```
+
+## Powerlevel9k
+Install zsh theme powerlevel9k.
+
+```
+git submodule add https://github.com/bhilburn/powerlevel9k.git ~/dotfiles/powerlevel9k
+```
+
