@@ -26,6 +26,11 @@ If you want to use homebrew on OS X, then set this path in localrc.
 export PATH="/usr/local/bin:$PATH"
 ```
 
+Install git submodules such as vim plugins and zsh theme.
+```
+dotfiles $ git submodule update --init
+```
+
 ## Nerd Fonts
 Add fonts that contain icons such as for GitHub.
 It will be set within iTerm2 and used by Powerlevel9k.
@@ -86,9 +91,9 @@ dotfiles $ git submodule update --init
 
 ```
 # Install vim plugins into dotfiles/vim/bundle
-$ git submodule add http://github.com/tpope/vim-fugitive.git ~/dotfiles/vim/bundle/vim-fugitive
-$ git add .
-$ git commit -m "Install vim-fugitive bundle as a submodule."
+dotfiles $ git submodule add http://github.com/tpope/vim-fugitive.git vim/bundle/vim-fugitive
+dotfiles $ git add .
+dotfiles $ git commit -m "Install vim-fugitive bundle as a submodule."
 ```
 ### Upgrading Vim plugin bundles
 
@@ -106,6 +111,6 @@ $ git pull origin master
 Install zsh theme powerlevel9k.
 
 ```
-git submodule add https://github.com/bhilburn/powerlevel9k.git ~/dotfiles/powerlevel9k
+dotfiles $ git submodule add https://github.com/bhilburn/powerlevel9k.git zsh-themes
 ```
 
