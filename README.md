@@ -26,6 +26,37 @@ If you want to use homebrew on OS X, then set this path in localrc.
 export PATH="/usr/local/bin:$PATH"
 ```
 
+## Nerd Fonts
+Add fonts that contain icons such as for GitHub.
+It will be set within iTerm2 and used by Powerlevel9k.
+
+```
+dotfiles $ brew tap caskroom/fonts
+dotfiles $ brew cask install font-hack-nerd-font
+dotfiles $ brew cask install font-droid-sansmono-nerd-font
+```
+
+Additional fonts available at
+https://github.com/Homebrew/homebrew-cask-fonts
+
+## iTerm2 and Zsh
+Install iTerm2 and Zsh, which is an alternative to bash.
+```
+dotfiles $ brew cask install iterm2
+dotfiles $ brew install zsh
+```
+
+Change the default shell to Zsh.
+```
+dotfiles $ chsh -s /bin/zsh
+```
+
+Add sytax highlighting and auto suggestions.
+
+```
+dotfiles $ brew install zsh-syntax-highlighting
+dotfiles $ brew install zsh-autosuggestions
+```
 
 Run the installation script, which will symlink the dot files. Existing symlinked dot files are not touched.
 
@@ -33,11 +64,11 @@ Run the installation script, which will symlink the dot files. Existing symlinke
 dotfiles $ rake install
 ```
 
-Pull in latest vim plugins.
+Download iTerm2 color schemes
+https://iterm2colorschemes.com
 
-```
-dotfiles $ git submodule update --init
-```
+Load iTerm2 preferences from `dotfiles/iTerm2/com.googlecode.iterm2.plist`
+
 
 ## Vim
 Used as the main console text editor. Selected plugins are geared toward Ruby on Rails development.
@@ -46,6 +77,11 @@ Used as the main console text editor. Selected plugins are geared toward Ruby on
   * Installed as git submodules for easier maintenance
     * Reference: [Synchronizing plugins with git submodules and pathogen](http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/)
   * [Solarized colorsheme](https://github.com/altercation/vim-colors-solarized)
+
+Pull in latest vim plugins.
+```
+dotfiles $ git submodule update --init
+```
 
 ### Installing additional Vim plugins
 
