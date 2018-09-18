@@ -18,6 +18,16 @@ antigen theme bhilburn/powerlevel9k powerlevel9k
 # Tell Antigen that you're done
 antigen apply
 
+# Paths
+# Stash your environment variables in ~/.localrc. This means they'll stay out
+# of your main dotfiles repository (which may be public, like this one), but
+# you'll have access to them in your scripts.
+if [[ -a ~/.localrc ]]
+then
+  source ~/.localrc
+fi
+
+
 # Easier navigation: .., ..., ...., .....
 alias ..="cd .."
 alias ...="cd ../.."
