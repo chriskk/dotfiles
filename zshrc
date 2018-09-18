@@ -4,6 +4,9 @@ source ~/dotfiles/zsh/antigen/antigen.zsh
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-autosuggestions
 
+export NVM_LAZY_LOAD=true
+antigen bundle lukechilds/zsh-nvm
+
 # Antigen theme
 POWERLEVEL9K_INSTALLATION_PATH=$ANTIGEN_BUNDLES/bhilburn/powerlevel9k
 POWERLEVEL9K_MODE='nerdfont-complete'
