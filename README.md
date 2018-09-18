@@ -56,6 +56,9 @@ Change the default shell to Zsh.
 dotfiles $ chsh -s /bin/zsh
 ```
 
+Zsh plugins and themes are installed via Antigen.
+Edit `zshrc` to add, remove or to change them.
+
 Run the installation script, which will symlink the dot files. Existing symlinked dot files are not touched.
 
 ```
@@ -98,12 +101,5 @@ $ git submodule foreach git pull origin master
 # Upgrading a specific plugin bundle
 $ cd ~/.vim/bundle/fugitive
 $ git pull origin master
-```
-
-## Powerlevel9k
-Install zsh theme powerlevel9k.
-
-```
-dotfiles $ git submodule add https://github.com/bhilburn/powerlevel9k.git zsh-themes
 ```
 
