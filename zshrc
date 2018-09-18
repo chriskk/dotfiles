@@ -1,10 +1,19 @@
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/dotfiles/zsh/antigen/antigen.zsh
+
+# Antigen bundles
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle zsh-users/zsh-autosuggestions
+
+# Antigen theme
+POWERLEVEL9K_INSTALLATION_PATH=$ANTIGEN_BUNDLES/bhilburn/powerlevel9k
 POWERLEVEL9K_MODE='nerdfont-complete'
-source  ~/dotfiles/zsh-themes/powerlevel9k.zsh-theme
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(ssh dir vcs newline status)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
 POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
+antigen theme bhilburn/powerlevel9k powerlevel9k
+
+# Tell Antigen that you're done
+antigen apply
 
 # Easier navigation: .., ..., ...., .....
 alias ..="cd .."

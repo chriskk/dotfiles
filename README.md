@@ -56,13 +56,6 @@ Change the default shell to Zsh.
 dotfiles $ chsh -s /bin/zsh
 ```
 
-Add sytax highlighting and auto suggestions.
-
-```
-dotfiles $ brew install zsh-syntax-highlighting
-dotfiles $ brew install zsh-autosuggestions
-```
-
 Run the installation script, which will symlink the dot files. Existing symlinked dot files are not touched.
 
 ```

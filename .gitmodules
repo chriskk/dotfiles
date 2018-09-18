@@ -26,3 +26,6 @@
 [submodule "zsh-themes"]
 	path = zsh-themes
 	url = https://github.com/bhilburn/powerlevel9k.git
+[submodule "zsh/antigen"]
+	path = zsh/antigen
+	url = https://github.com/zsh-users/antigen.git
