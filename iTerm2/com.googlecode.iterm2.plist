@@ -227,6 +227,12 @@
 	</dict>
 	<key>Default Bookmark Guid</key>
 	<string>9FA6DE11-BFF6-4D3C-A6A8-824A7D2B307A</string>
+	<key>HideActivityIndicator</key>
+	<false/>
+	<key>HideMenuBarInFullscreen</key>
+	<true/>
+	<key>HideTab</key>
+	<false/>
 	<key>HotkeyMigratedFromSingleToMulti</key>
 	<true/>
 	<key>LoadPrefsFromCustomFolder</key>
@@ -278,11 +284,15 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>-1651 366 606 469 -1920 240 1920 1178 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>-1619 932 796 486 -1920 240 1920 1178 </string>
+	<string>688 599 918 512 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>-650 751 650 667 -1920 240 1920 1178 </string>
+	<string>-650 727 650 691 -1920 240 1920 1178 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>-1301 751 650 667 -1920 240 1920 1178 </string>
+	<key>NSWindow Frame iTerm Window 2</key>
+	<string>-721 446 650 667 -1920 240 1920 1178 </string>
+	<key>NSWindow Frame iTerm Window 3</key>
+	<string>-1652 349 650 667 -1920 240 1920 1178 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1648,12 +1658,23 @@
 	<true/>
 	<key>NoSyncInstallationId</key>
 	<string>002F73CC-93A0-44D2-A4DC-4F608AD57721</string>
+	<key>NoSyncLastTipTime</key>
+	<real>558996341.55856299</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
 	<integer>0</integer>
+	<key>NoSyncPermissionToShowTip</key>
+	<true/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>558569946.92263997</real>
+	<key>NoSyncTipsToNotShow</key>
+	<array>
+		<string>000</string>
+		<string>0000</string>
+	</array>
+	<key>OpenBookmark</key>
+	<false/>
 	<key>PointerActions</key>
 	<dict>
 		<key>Button,1,1,,</key>
@@ -1698,13 +1719,17 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-09-13T22:47:28Z</date>
+	<date>2018-09-19T17:31:20Z</date>
 	<key>SUSendProfileInfo</key>
+	<false/>
+	<key>StretchTabsToFillBar</key>
 	<false/>
 	<key>TabViewType</key>
 	<integer>1</integer>
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
+	<key>findMode_iTerm</key>
+	<integer>0</integer>
 	<key>iTerm Version</key>
 	<string>3.2.0</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
