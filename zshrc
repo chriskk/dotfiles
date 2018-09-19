@@ -10,9 +10,12 @@ antigen bundle lukechilds/zsh-nvm
 # Antigen theme
 POWERLEVEL9K_INSTALLATION_PATH=$ANTIGEN_BUNDLES/bhilburn/powerlevel9k
 POWERLEVEL9K_MODE='nerdfont-complete'
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(ssh dir vcs newline status)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(time dir vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
+POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
+POWERLEVEL9K_TIME_BACKGROUND='black'
+POWERLEVEL9K_TIME_FOREGROUND='white'
 antigen theme bhilburn/powerlevel9k powerlevel9k
 
 # Tell Antigen that you're done
