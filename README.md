@@ -56,6 +56,9 @@ Change the default shell to Zsh.
 dotfiles $ chsh -s /bin/zsh
 ```
 
+* To keep the default bash shell for OS X's Terminal application,
+`Preferances... -> General tab -> Shells open with : Command -> /bin/bash`.
+
 Zsh plugins and themes are installed via Antigen.
 Edit `zshrc` to add, remove or to change them.
 
