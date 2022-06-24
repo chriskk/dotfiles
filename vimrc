@@ -6,10 +6,10 @@ execute pathogen#infect()
 execute pathogen#helptags()
 syntax on                " enable syntax highlighting
 
-" Solarized colorscheme
-" http://ethanschoonover.com/solarized
+" Solarized high contrast colorscheme
+" https://github.com/lifepillar/vim-solarized8
 set background=dark
-colorscheme solarized
+colorscheme solarized8_high
 
 filetype plugin indent on " activates indenting for files
 set number                " show line numbers

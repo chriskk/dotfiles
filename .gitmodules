@@ -26,3 +26,6 @@
 [submodule "zsh/antigen"]
 	path = zsh/antigen
 	url = https://github.com/zsh-users/antigen.git
+[submodule "vim/bundle/vim-solarized8"]
+	path = vim/bundle/vim-solarized8
+	url = https://github.com/lifepillar/vim-solarized8.git
