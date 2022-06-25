@@ -1,9 +1,7 @@
 # chriskk Dot Files
 Local dev environment:
 
-* Mac OS X 10.7 and above
-  * Should work in Linux as well
-* Bash (default shell)
+* Mac OS X 12.0 and above
 
 ## Installation
 
@@ -13,7 +11,7 @@ Clone into `~/`
 $ git clone https://github.com/chriskk/dotfiles.git
 ```
 
-Local environment variables are set within localrc, which is ignored by git. Add local paths such as `/usr/local/bin` and any aliases to localrc.
+Local environment variables are set within localrc, which is ignored by git. Add local paths such as `/opt/homebrew` and any aliases to localrc.
 
 ```
 $ cd dotfiles
@@ -23,7 +21,7 @@ dotfiles $ vim localrc
 If you want to use homebrew on OS X, then set this path in localrc.
 
 ```
-export PATH="/usr/local/bin:$PATH"
+export PATH="/opt/homebrew:$PATH"
 ```
 
 Install git submodules such as vim plugins and zsh theme.
@@ -33,31 +31,21 @@ dotfiles $ git submodule update --init
 
 ## Nerd Fonts
 Add fonts that contain icons such as for GitHub.
-It will be set within iTerm2 and used by Powerlevel9k.
+It will be set within iTerm2 and used by Powerlevel10k.
 
 ```
-dotfiles $ brew tap caskroom/fonts
-dotfiles $ brew cask install font-hack-nerd-font
-dotfiles $ brew cask install font-droid-sansmono-nerd-font
+dotfiles $ brew tap homebrew/cask-fonts
+dotfiles $ brew install font-droid-sans-mono-nerd-font --cask
 ```
 
 Additional fonts available at
 https://github.com/Homebrew/homebrew-cask-fonts
 
-## iTerm2 and Zsh
-Install iTerm2 and Zsh, which is an alternative to bash.
+## iTerm2
+Install iTerm2 via download or using Homebrew.
 ```
 dotfiles $ brew cask install iterm2
-dotfiles $ brew install zsh
 ```
-
-Change the default shell to Zsh.
-```
-dotfiles $ chsh -s /bin/zsh
-```
-
-* To keep the default bash shell for OS X's Terminal application,
-`Preferances... -> General tab -> Shells open with : Command -> /bin/bash`.
 
 Zsh plugins and themes are installed via Antigen.
 Edit `zshrc` to add, remove or to change them.
