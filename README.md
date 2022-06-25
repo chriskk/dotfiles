@@ -61,6 +61,12 @@ https://iterm2colorschemes.com
 
 Load iTerm2 preferences from `dotfiles/iTerm2/com.googlecode.iterm2.plist`
 
+## macOS Terminal.app
+Solarized Dark High Contrast theme is located at `dotfiles/Terminal/Solarized Dark High Contrast.terminal`.
+
+Additional themes available at
+https://github.com/lysyi3m/macos-terminal-themes
+
 ## Vim
 Used as the main console text editor. Selected plugins are geared toward Ruby on Rails development.
 
