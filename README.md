@@ -29,17 +29,11 @@ Install git submodules such as vim plugins and zsh theme.
 dotfiles $ git submodule update --init
 ```
 
-## Nerd Fonts
+## Meslo Nerd Font patched for Powerlevel10k
 Add fonts that contain icons such as for GitHub.
-It will be set within iTerm2 and used by Powerlevel10k.
 
-```
-dotfiles $ brew tap homebrew/cask-fonts
-dotfiles $ brew install font-droid-sans-mono-nerd-font --cask
-```
-
-Additional fonts available at
-https://github.com/Homebrew/homebrew-cask-fonts
+Refer to the font section
+https://github.com/romkatv/powerlevel10k?tab=readme-ov-file#fonts
 
 ## iTerm2
 Install iTerm2 via download or using Homebrew.
