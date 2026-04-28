@@ -2,6 +2,9 @@
 " http://blog.smalleycreative.com/tutorials/using-git-and-github-to-manage-your-dotfiles/
 " https://github.com/mathiasbynens/dotfiles
 
+" rust.vim: rustfmt-friendly indent (4 spaces, textwidth 99) for *.rs (default on)
+let g:rust_recommended_style = 1
+
 execute pathogen#infect()
 execute pathogen#helptags()
 syntax on                " enable syntax highlighting
@@ -18,8 +21,7 @@ set ruler                 " Always show info along bottom.
 set title                 " show the filename in the window titlebar
 set nowrap                " don't wrap text
 
-" The Ruby Style Guide
-" https://github.com/bbatsov/ruby-style-guide/
+" Default indent for non-Rust files (2 spaces — JS/TS; Rust uses rust.vim ftplugin → 4 spaces)
 set tabstop=2             " tab spacing for existing tabs
 set softtabstop=2         " unify
 set shiftwidth=2          " indent/outdent by 2 columns
