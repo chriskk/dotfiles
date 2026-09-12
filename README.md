@@ -42,7 +42,7 @@ Install iTerm2 via download or using Homebrew.
 Zsh plugins and themes are installed via Antigen.
 Edit `zshrc` to add, remove or to change them.
 
-Run the install task: most dotfiles are **symlinked** from `~/dotfiles` into `~` (e.g. `bash/` → `~/.bash`, `vim/` → `~/.vim`). If a target already exists and differs, Rake **asks** before replacing it. **Exception:** `zshrc` is **copied** to `~/.zshrc` (not symlinked), so repo edits are not picked up until you re-copy or edit `~/.zshrc` directly.
+Run the install task: dotfiles are **symlinked** from `~/dotfiles` into `~` (e.g. `bash/` → `~/.bash`, `vim/` → `~/.vim`, `zshrc` → `~/.zshrc`). If a target already exists and differs, Rake **asks** before replacing it.
 
 ```
 dotfiles $ rake install
@@ -86,4 +86,3 @@ $ cd vim/bundle/rust.vim && git pull
 ```
 
 Or the same paths under `~/.vim/bundle/` if `~/.vim` is symlinked here.
-
